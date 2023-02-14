@@ -25,6 +25,7 @@ section {
     perspective: 10px;
     background: linear-gradient(180deg, rgba(199,240,232,1) 0%, rgba(158,209,217,1) 12%);
     z-index: -12px;
+    padding-top: 300px;
 }
 
 header {
