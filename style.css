@@ -7,6 +7,7 @@ body {
     font-size: 7rem;
     color: white;
     text-shadow: 0 0 5px black;
+    z-index: 50;
 }
 
 section {
@@ -14,6 +15,7 @@ section {
     padding: 2rem;
     background-color: #333;
     color: white;
+    z-index: 50;
 }
 
 .wrapper {
@@ -35,9 +37,9 @@ header {
     z-index: -1;
 }
 
-.far-grass,
-.med-grass,
-.grass,
+.bottom-grass,
+.mid-grass,
+.top-grass,
 .mountains {
     position: absolute; 
     height: 100%;
@@ -46,19 +48,18 @@ header {
     z-index: -1;
 }
 
-/* .layer-5 {
-    transform: translateZ(-10px) scale(2);
-    z-index: 20px;
+.mountains {
+    z-index: 1;
 }
 
-.layer-4 {
-    transform: translateZ(-5px) scale(1.5);
+.top-grass {
+    z-index: 2;
 }
 
-.layer-3 {
-    transform: translateZ(-3px) scale(1.3)
+.mid-grass {
+    z-index: 3;
 }
 
-.layer-2 {
-    transform: translateZ(-2px) scale(1.2);
-} */
+.bottom-grass {
+    z-index: 4;
+}
