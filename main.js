@@ -2,6 +2,8 @@ const wrapperDiv = document.querySelector('.wrapper')
 
 wrapperDiv.addEventListener('scroll', function(e) {
     
+// Background paper scroll speed controls
+
     const mountains = document.querySelector('.mountains')
 
     const topGrass = document.querySelector('.top-grass')
@@ -29,6 +31,13 @@ wrapperDiv.addEventListener('scroll', function(e) {
     midGrass.style.transform = `translate3d(0px, ${midGrassScroll}px, 0px)`
 
     bottomGrass.style.transform = `translate3d(0px, ${bottomGrassScroll}px, 0px)`
+
+// smooth scrolling triggers
+
+// Image ratio maintain
+
+
+    
 
 })
  

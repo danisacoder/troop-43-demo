@@ -25,9 +25,10 @@ section {
     perspective: 10px;
     background: linear-gradient(180deg, rgba(199,240,232,1) 0%, rgba(158,209,217,1) 12%);
     z-index: -12px;
+
 }
 
-header {
+.paper-background {
     position: relative;
     display: flex;
     justify-content: center;
@@ -35,6 +36,7 @@ header {
     height: 100%;
     transform-style: preserve-3d;
     z-index: -1;
+    background-image: url(paper-background/paper-background-2-mountains.png), url
 }
 
 .bottom-grass,
@@ -45,6 +47,7 @@ header {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: 0px -300px;
     z-index: -1;
 }
 
@@ -54,12 +57,16 @@ header {
 
 .top-grass {
     z-index: 2;
+    filter:brightness(80%);
 }
 
 .mid-grass {
     z-index: 3;
+    filter:brightness(95%);
 }
 
 .bottom-grass {
     z-index: 4;
+    filter: brightness(120%);
 }
+
