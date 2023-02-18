@@ -32,13 +32,6 @@ wrapperDiv.addEventListener('scroll', function(e) {
 
     bottomGrass.style.transform = `translate3d(0px, ${bottomGrassScroll}px, 0px)`
 
-// smooth scrolling triggers
-
-// Image ratio maintain
-
-
-    
-
 })
  
 
