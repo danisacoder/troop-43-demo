@@ -33,6 +33,32 @@ wrapperDiv.addEventListener('scroll', function(e) {
     bottomGrass.style.transform = `translate3d(0px, ${bottomGrassScroll}px, 0px)`
 
 })
- 
 
- 
+// changing the style of the current link in menu so you know where you are
+
+const linkListHtml = document.querySelector('.linklist').innerHTML
+
+console.log(linkListHtml)
+
+const menuLinkListArray = document.querySelectorAll('.linklist a')
+
+console.log(menuLinkListArray)
+
+var currentFileName = location.href.split("/").slice(-1).join('').split('.').shift()
+
+console.log(currentFileName)
+
+for (let entry of menuLinkListArray) {
+    if (entry.id === currentFileName) {
+        entry.style.color = 'gray'
+    } 
+}
+
+// making the link to the current page invalid, so you don't reload and waste time/data
+
+document.addEventListener('click', function(e) {
+
+    if (e.target.id === currentFileName) {
+        e.target.href = "#"
+    }
+})

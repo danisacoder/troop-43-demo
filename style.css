@@ -13,7 +13,7 @@ body {
     --hamburger-gap: 6px;
     --foreground: #333;
     --background: white;
-    --hamburger-margin: 8px;
+    --hamburger-margin: 15px;
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); 
     --sidebar-side-padding: 2rem;
@@ -97,12 +97,12 @@ body {
     color: var(--background);
     max-width: 40rem;
     min-height: 100vh;
+    height: 100%;
     position: fixed;
-
     padding-right: var(--sidebar-side-padding);
     padding-left: var(--sidebar-side-padding);
     line-height: 4rem;
-    /* z-index: 1000; */
+    z-index: 15;
 }
 
 .sidebar a {
@@ -131,7 +131,7 @@ body {
     font-size: 7rem;
     color: white;
     text-shadow: 0 0 5px black;
-    z-index: 50;
+    z-index: 5;
 }
 
 section {
@@ -139,7 +139,7 @@ section {
     padding: 2rem;
     background-color: #333;
     color: white;
-    z-index: 50;
+    /* z-index: 0; */
 }
 
 .wrapper {
