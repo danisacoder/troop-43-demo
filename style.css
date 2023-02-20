@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    /* padding: 0; */
+    font-family: "Inter", sans-serif;
 }
 
 :root {
@@ -16,6 +16,7 @@ body {
     --hamburger-margin: 8px;
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); 
+    --sidebar-side-padding: 2rem;
 }
 
 .hamburger-menu::before,
@@ -59,6 +60,7 @@ body {
     width: 0;
 }
 
+
 .hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -84,18 +86,46 @@ body {
     box-shadow: 0 0 0 1px var(--foreground);
 }
 
+
+
 .sidebar {
     transition: translate var(--animation-timing);
     translate: -100%;
-    padding: 0.5rem 1rem;
-    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+    /* padding: 0.5rem 1rem; */
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 2rem);
     background-color: var(--foreground);
     color: var(--background);
-    max-width: 20rem;
+    max-width: 40rem;
     min-height: 100vh;
+    position: fixed;
+
+    padding-right: var(--sidebar-side-padding);
+    padding-left: var(--sidebar-side-padding);
+    line-height: 4rem;
+    /* z-index: 1000; */
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.big-fancy-text,
+.medium-fancy-text,
+.small-fancy-text {
+    font-family: 'Abril Fatface', cursive;
 }
 
 
+
+.big-fancy-text {
+    font-size: 1.5rem;
+}
+
+.small-menu-text {
+    font-size: 1.2rem;
+    padding-left: 2em;
+}
 
 .title {
     font-size: 7rem;
