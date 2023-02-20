@@ -52,10 +52,15 @@ var currentFileName = location.href.split("/").slice(-1).join('').split('.').shi
 
 console.log(currentFileName)
 
-const currentPage = window.location.pathname;
+const current = window.location.pathname;
 
-for (let entry of menuLinkListArray) { 
+if (current == '/index.html') {
+  console.log('Is the homepage.')
+} else {
+  console.log('Not on the homepage.')
+}
 
+for (let entry of menuLinkListArray) {
     if (entry.id === currentFileName)  {
         entry.style.color = 'gray'
     } else {
