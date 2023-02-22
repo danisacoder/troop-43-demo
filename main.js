@@ -44,14 +44,23 @@ const menuLinkListArray = document.querySelectorAll('.linklist a')
 
 console.log(menuLinkListArray)
 
+const homepageLink = document.querySelector('#index')
+
+console.log(homepageLink)
+
 var currentFileName = location.href.split("/").slice(-1).join('').split('.').shift()
 
 console.log(currentFileName)
 
-for (let entry of menuLinkListArray) {
-    if (entry.id === currentFileName) {
+const currentPage = window.location.pathname;
+
+for (let entry of menuLinkListArray) { 
+
+    if (entry.id === currentFileName)  {
         entry.style.color = 'gray'
-    } 
+    } else {
+        homepageLink.style.color = 'gray'
+    }
 }
 
 // making the link to the current page invalid, so you don't reload and waste time/data
