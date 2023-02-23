@@ -216,7 +216,7 @@ body {
     color: white;
 }
 
-.dylan-button {
+.dylan-button-div{
     position: fixed;
     top: 0;
     right: 0;
@@ -227,6 +227,11 @@ body {
     background-size: 100%;
     z-index: 99;
     margin: 10px;
-    background-image: url("images/dylan-button.png");
+    /* background-image: url("images/dylan-button.png"); */
     /* background-position: right top; */
+}
+
+.dylan-button-div img {
+    width: 75px;
+    height: 75px;
 }
