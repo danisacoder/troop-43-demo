@@ -4,33 +4,42 @@ wrapperDiv.addEventListener('scroll', function(e) {
     
 // Background paper scroll speed controls
 
-    const mountains = document.querySelector('.mountains')
+    const mountains1 = document.querySelector('.mountain-layer-1')
+    const mountains2 = document.querySelector('.mountain-layer-2')
+    const mountains3 = document.querySelector('.mountain-layer-3')
+    const mountains4 = document.querySelector('.mountain-layer-4')
+    const mountains5 = document.querySelector('.mountain-layer-5')
+    const mountains6 = document.querySelector('.mountain-layer-6')
 
-    const topGrass = document.querySelector('.top-grass')
-
-    const midGrass = document.querySelector('.mid-grass')
-
-    const bottomGrass = document.querySelector('.bottom-grass')
+    
 
     var scrolledAmnt = wrapperDiv.scrollTop
 
-    let mountainScroll = scrolledAmnt * .8
+    let mountains1scroll = scrolledAmnt * .8
 
-    let topGrassScroll = scrolledAmnt * .7
+    let mountains2scroll = scrolledAmnt * .7
 
-    let midGrassScroll = scrolledAmnt * .6
+    let mountains3scroll = scrolledAmnt * .6
 
-    let bottomGrassScroll = scrolledAmnt * .5
+    let mountains4scroll = scrolledAmnt * .5
+
+    let mountains5scroll = scrolledAmnt * .4
+
+    let mountains6scroll = scrolledAmnt * .3
 
 
-    mountains.style.transform = `translate3d(0px, ${mountainScroll}px, 0px)`
+    mountains1.style.transform = `translate3d(0px, ${mountains1scroll}px, 0px)`
 
 
-    topGrass.style.transform = `translate3d(0px, ${topGrassScroll}px, 0px)`
+    mountains2.style.transform = `translate3d(0px, ${mountains2scroll}px, 0px)`
 
-    midGrass.style.transform = `translate3d(0px, ${midGrassScroll}px, 0px)`
+    mountains3.style.transform = `translate3d(0px, ${mountains3scroll}px, 0px)`
 
-    bottomGrass.style.transform = `translate3d(0px, ${bottomGrassScroll}px, 0px)`
+    mountains4.style.transform = `translate3d(0px, ${mountains4scroll}px, 0px)`
+
+    mountains5.style.transform = `translate3d(0px, ${mountains5scroll}px, 0px)`
+
+    mountains6.style.transform = `translate3d(0px, ${mountains6scroll}px, 0px)`
 
 })
 

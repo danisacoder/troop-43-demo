@@ -4,13 +4,15 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: "Inter", sans-serif;
+    text-shadow: 0 0 6px black;
 }
 
 :root {
     --bar-width: 60px;
     --bar-height: 8px;
-    --hamburger-gap: 6px;
+    --hamburger-gap: 10px;
     --foreground: #333;
     --background: white;
     --hamburger-margin: 15px;
@@ -67,7 +69,7 @@ body {
     gap: var(--hamburger-gap);
     width: max-content;
     position: absolute;
-    top: var(--hamburger-margin);
+    top: calc(var(--hamburger-margin) + 2px);
     left: var(--hamburger-margin);
     z-index: 100;
     cursor: pointer;
@@ -146,51 +148,85 @@ body {
 .paper-background {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 100%;
     transform-style: preserve-3d;
     z-index: -1;
+    /* background-blend-mode: darken; */
+    /* opacity: 0.9; */
 }
 
-.bottom-grass,
-.mid-grass,
-.top-grass,
-.mountains {
+.mountain-layer-1,
+.mountain-layer-2,
+.mountain-layer-3,
+.mountain-layer-4,
+.mountain-layer-5,
+.mountain-layer-6 {
     position: absolute; 
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: 0px -300px;
+    object-position: 0px 0px;
     z-index: -1;
 }
 
-.mountains {
+.mountain-layer-1 {
     z-index: 1;
 }
 
-.top-grass {
+.mountain-layer-2 {
     z-index: 2;
-    filter:brightness(80%);
 }
 
-.mid-grass {
+.mountain-layer-3 {
     z-index: 3;
-    filter:brightness(95%);
 }
 
-.bottom-grass {
+.mountain-layer-4 {
     z-index: 4;
-    filter: brightness(120%);
 }
+
+.mountain-layer-5 {
+    z-index: 5;
+}
+
+.mountain-layer-6 {
+    z-index: 6;
+}
+
 
 .page-1 {
+    outline: 1px solid white;
     position: absolute;
     display: flex;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    /* margin: 1000px 0; */
+    width: 100vw;
+    height: 100vh;
     align-items: center;
     justify-content: center;
+    /* max-width: 500px; */
+    flex-direction: column; 
+}
+
+.page-1 h1,
+.page-1 p {
+    color: white;
+}
+
+.dylan-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* right: 0; */
+    width: 75px;
+    height: 75px;
+    /* background-color: pink; */
+    background-size: 100%;
+    z-index: 99;
+    margin: 10px;
+    background-image: url("images/dylan-button.png");
+    /* background-position: right top; */
 }
