@@ -33,15 +33,19 @@
     
     <div class="wrapper">
         <!-- <img src="images/proto-critter-1.png" class="critter"> -->
-        <div class="paper-background">
+        <!-- <div class="paper-background">
             <img src="images/paper-background-2.0/mountain-layer-1.png" class="mountain-layer-1">
             <img src="images/paper-background-2.0/mountain-layer-2.png" class="mountain-layer-2">
             <img src="images/paper-background-2.0/mountain-layer-3.png" class="mountain-layer-3">
             <img src="images/paper-background-2.0/mountain-layer-4.png" class="mountain-layer-4">
             <img src="images/paper-background-2.0/mountain-layer-5.png" class="mountain-layer-5">
             <img src="images/paper-background-2.0/mountain-layer-6.png" class="mountain-layer-6">
-        </div>
-        <div class="page-1">
+        </div> -->
+        <div class="page-1" 
+        ontouchstart="p1HandleTouchStart(event)"
+        ontouchmove="p1HandleTouchMove(event)"
+        ontouchend="p1HandleTouchEnd(event)"
+        ">
             <div class="content-wrapper text-shadow-black">
                 <h1 class="big-header-text fancy-text"><span id="hey-transform">Hey,</span><br>
                 <span class="slightly-larger-text">troopsters!</span>
@@ -49,8 +53,12 @@
                 <p>Golly, it’s time to wrassle up a rucksack and hit that dusty old trail! With our Dear Fearless Leader <a href="dylan.html">Dylan “Mr. International” Fellows</a> to show us the way, we’ll never get lost! And if we do, we’ll make a <a href="album">really good album</a> about it.</p>
             </div>
         </div>
-        <div class="page-2">
-            
+        <div class="page-2"
+        ontouchstart="p2HandleTouchStart(event)"
+        ontouchmove="p2HandleTouchMove(event)"
+        ontouchend="p2HandleTouchEnd(event)"
+        >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatem eius molestiae fugit libero amet quis tenetur fugiat error eaque delectus, modi saepe blanditiis odit expedita, voluptate quasi laborum fuga ipsa. Qui soluta et reprehenderit reiciendis fuga ea quaerat omnis! Nemo repudiandae praesentium at enim, officia magnam maiores ipsum rem dolore qui sapiente dolor culpa inventore excepturi, ipsam, accusantium labore dolores repellendus incidunt quae? Ducimus, saepe perferendis blanditiis sit nesciunt esse eveniet ipsam aliquid. Totam ea eaque, ipsa, nemo obcaecati facere ut itaque fugit et beatae ipsam, soluta amet rem quaerat tempore culpa labore molestias sunt expedita quo aliquid cumque.</p>
         </div>
     </div>
     <script src="main.js" type="module"></script>

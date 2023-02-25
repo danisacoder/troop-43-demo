@@ -86,3 +86,24 @@ document.addEventListener('click', function(e) {
         e.target.href = "#"
     }
 })
+
+// Swipe responses to touch input
+
+const p1 = document.querySelector('.page-1')
+const p2 = document.querySelector('.page-2')
+
+const startingX = 0
+
+function p1HandleTouchStart(e) {
+    startingX = e.touches[0].clientX;
+} 
+
+function p1HandleTouchMove(e) {
+    const touch = e.touches[0];
+    // "change" is the difference between the starting point and the touching point at the moment we are swiping, which lets us set the style of swipe... I think
+    const change = startingX - touch.clientX;
+
+    p1.style.top = `-${change}px`
+
+}
+

@@ -7,6 +7,7 @@ body {
     padding: 0;
     font-family: "Inter", sans-serif;
     font-size: var(--fs-400);
+    color: white;
 }
 
 :root {
@@ -51,7 +52,7 @@ body {
 }
 
 .slightly-larger-text {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .title {
@@ -241,6 +242,13 @@ a {
     padding: 0 50px;
 }
 
+.page-2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+
 .page-1 h1 {
     line-height: .75;
     display: block;
@@ -250,6 +258,7 @@ a {
 .page-1 p {
     color: white;
 }
+
 
 .content-wrapper p {
     max-width: 400px;
@@ -293,9 +302,9 @@ a {
 }
 
 
-#hey-transform {
+/* #hey-transform {
     transform: rotate(90deg);
-}
+} */
 
 .text-shadow-black {
     text-shadow: 0 1px 6px black;
