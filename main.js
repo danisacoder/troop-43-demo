@@ -1,3 +1,24 @@
+// add same menu every time with JS (for consistency)
+
+let navDiv = document.querySelector('nav')
+
+navDiv.innerHTML = `
+    <label class="hamburger-menu">
+            <input type="checkbox"/>
+    </label>
+    <aside class="sidebar">
+        <nav class="linklist">
+            <div><a href="album.html" class="four-hundred-text fancy-text" id="album">The End & In Between</a></div>
+            <div><a href="dylan.html" class="four-hundred-text fancy-text" id="dylan">Dylan Fellows</a></div>
+            <div><a href="#" class="left-padding" id="press">Press Kit</a></div>
+            <div><a href="news.html" class="left-padding" id="news">Updates</a></div>
+            <div><a href="index.html" class="four-hundred-text fancy-text" id="index">Troop 43</a></div>
+            <div><a href="#" class="left-padding" id="videos">Survival Tips</a></div>
+            <div><a href="#" class="four-hundred-text fancy-text" id="international">Mr. International</a></div>
+        </nav>
+    </aside>
+`
+
 const wrapperDiv = document.querySelector('.wrapper')
 
 if (wrapperDiv) {
@@ -87,8 +108,6 @@ for (let entry of menuLinkListArray) {
 
     if (entry.id === currentFileName)  {
         entry.style.color = 'gray'
-    } else {
-        homepageLink.style.color = 'gray'
     }
 }
 
