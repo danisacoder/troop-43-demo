@@ -15,19 +15,33 @@ if (wrapperDiv) {
 
         
 
+        // var scrolledAmnt = wrapperDiv.scrollTop
+
+        // let mountains1scroll = scrolledAmnt * .8
+
+        // let mountains2scroll = scrolledAmnt * .7
+
+        // let mountains3scroll = scrolledAmnt * .6
+
+        // let mountains4scroll = scrolledAmnt * .5
+
+        // let mountains5scroll = scrolledAmnt * .4
+
+        // let mountains6scroll = scrolledAmnt * .3
+
         var scrolledAmnt = wrapperDiv.scrollTop
 
-        let mountains1scroll = scrolledAmnt * .8
+        let mountains1scroll = scrolledAmnt * .35
 
-        let mountains2scroll = scrolledAmnt * .7
+        let mountains2scroll = scrolledAmnt * .3
 
-        let mountains3scroll = scrolledAmnt * .6
+        let mountains3scroll = scrolledAmnt * .25
 
-        let mountains4scroll = scrolledAmnt * .5
+        let mountains4scroll = scrolledAmnt * .2
 
-        let mountains5scroll = scrolledAmnt * .4
+        let mountains5scroll = scrolledAmnt * .15
 
-        let mountains6scroll = scrolledAmnt * .3
+        let mountains6scroll = scrolledAmnt * .1
 
 
         mountains1.style.transform = `translate3d(0px, ${mountains1scroll}px, 0px)`
