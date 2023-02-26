@@ -12,17 +12,17 @@ body {
 
 :root {
     --bar-width: 30px;
-    --bar-height: 3px;
-    --hamburger-gap: 4px;
+    --bar-height: 2.5px;
+    --hamburger-gap: 3px;
     --foreground: #333;
     --background: white;
     --hamburger-margin: 25px;
     --animation-timing: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); 
     --sidebar-side-padding: 2rem;
-    --fs-xl: 2.5rem;
-    --fs-600: 1.45rem;
-    --fs-500: 1.25rem;
+    --fs-xl: 2rem;
+    --fs-600: 1.2rem;
+    --fs-500: 1.1rem;
     --fs-400: 1rem;
 }
 
@@ -38,21 +38,29 @@ body {
     }
 }
 
-.big-header-text {
+.small-line-height {
+    line-height: .75;
+}
+
+.extra-large-text {
     font-size: var(--fs-xl);
 }
 
-.large-menu-text {
-    font-size: calc(var(--fs-xl)/2);
+.six-hundred-text {
+    font-size: var(--fs-600);
 }
 
-.small-menu-text {
+.four-hundred-text {
     font-size: var(--fs-400);
     padding-left: 2em;
 }
 
+.half-extra-large-text {
+    font-size: calc(var(--fs-xl)/2);
+}
+
 .slightly-larger-text {
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .title {
@@ -229,7 +237,7 @@ a {
 
 .page-1 {
     text-align: center;
-    outline: 1px solid white;
+    /* outline: 1px solid white; */
     position: absolute;
     display: flex;
     top: 0;
@@ -246,8 +254,30 @@ a {
     position: absolute;
     top: 100%;
     left: 0;
+    background-color: olivedrab;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 0 50px;
+    text-align: center;
 }
 
+.ten-px-margin {
+    margin: 15px 0;
+}
+
+.page-3 {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    background-color: #ff6961;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
 
 .page-1 h1 {
     line-height: .75;
@@ -285,7 +315,7 @@ a {
 .dylan-button-div img {
     width: 75px;
     height: 75px;
-    box-shadow: 0 3px 6px black;
+    box-shadow: 0 1px 6px black;
     border-radius: 50%;
 }
 
@@ -307,7 +337,7 @@ a {
 } */
 
 .text-shadow-black {
-    text-shadow: 0 1px 6px black;
+    text-shadow: 0 1px 3px black;
 }
 
 .flag {
