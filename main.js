@@ -10,14 +10,16 @@ navDiv.innerHTML = `
         <nav class="linklist">
             <div><a href="album.html" class="four-hundred-text fancy-text" id="album">The End & In Between</a></div>
             <div><a href="dylan.html" class="four-hundred-text fancy-text" id="dylan">Dylan Fellows</a></div>
-            <div><a href="#" class="left-padding" id="press">Press Kit</a></div>
+            <div><a href="updates.html" class="left-padding" id="press">Press Kit</a></div>
             <div><a href="news.html" class="left-padding" id="news">Updates</a></div>
             <div><a href="index.html" class="four-hundred-text fancy-text" id="index">Troop 43</a></div>
-            <div><a href="#" class="left-padding" id="videos">Survival Tips</a></div>
-            <div><a href="#" class="four-hundred-text fancy-text" id="international">Mr. International</a></div>
+            <div><a href="#survival" class="left-padding" id="videos">Survival Tips</a></div>
+            <div><a href="international.html" class="four-hundred-text fancy-text" id="international">Mr. International</a></div>
         </nav>
     </aside>
 `
+
+// creating the parallax backcground elements
 
 const wrapperDiv = document.querySelector('.wrapper')
 
@@ -106,17 +108,31 @@ const currentPage = window.location.pathname;
 
 for (let entry of menuLinkListArray) { 
 
-    if (entry.id === currentFileName)  {
+    if (entry.id === currentFileName) {
         entry.style.color = 'gray'
+    } else {
+        
     }
 }
 
 // making the link to the current page invalid, so you don't reload and waste time/data
 
-document.addEventListener('click', function(e) {
+console.log(currentFileName)
 
-    if (e.target.id === currentFileName) {
-        e.target.href = "#"
-    }
-})
+// document.addEventListener('click', function(e) {
+
+    // if (e.target.id === )
+
+//     if (e.target.id === currentFileName) {
+//         e.target.href = "#"
+//     }
+// })
+
+// Making menu close if you click/tap somewhere not in the menu
+
+let hamburgerCheckbox = document.querySelector('input[name=checkbox]')
+
+// hamburgerCheckbox.addEventListener('change', function() {
+//     console.log('wow!')
+// })
 
