@@ -35,22 +35,7 @@ if (wrapperDiv) {
         const mountains4 = document.querySelector('.mountain-layer-4')
         const mountains5 = document.querySelector('.mountain-layer-5')
         const mountains6 = document.querySelector('.mountain-layer-6')
-
-        
-
-        // var scrolledAmnt = wrapperDiv.scrollTop
-
-        // let mountains1scroll = scrolledAmnt * .8
-
-        // let mountains2scroll = scrolledAmnt * .7
-
-        // let mountains3scroll = scrolledAmnt * .6
-
-        // let mountains4scroll = scrolledAmnt * .5
-
-        // let mountains5scroll = scrolledAmnt * .4
-
-        // let mountains6scroll = scrolledAmnt * .3
+        // const troopContent =  document.querySelector('.generic-wrapper')
 
         var scrolledAmnt = wrapperDiv.scrollTop
 
@@ -66,6 +51,8 @@ if (wrapperDiv) {
 
         let mountains6scroll = scrolledAmnt * .1
 
+        // let troopContentScroll = scrolledAmnt * 2
+
 
         mountains1.style.transform = `translate3d(0px, ${mountains1scroll}px, 0px)`
 
@@ -79,6 +66,8 @@ if (wrapperDiv) {
         mountains5.style.transform = `translate3d(0px, ${mountains5scroll}px, 0px)`
 
         mountains6.style.transform = `translate3d(0px, ${mountains6scroll}px, 0px)`
+
+        // troopContent.style.transform =  `translate3d(0px, ${troopContentScroll}px, 0px)`
 
     })
 
